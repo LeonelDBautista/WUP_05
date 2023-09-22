@@ -21,9 +21,17 @@ $H_0$: There is no difference in the data when comparing treatment and infection
 
 $H_A$: There is a difference in the data when comparing treatment and infection rate. 
 
+```{r include=FALSE}
+drug_users <- filter(triUmp, DrugUser == "yes")
+```
+
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
+
+We will use the Dyplr tool "filter" to create a subset of the data, storing only data where drug user= "yes".   
+
+We will then use the CandP helper files to get R code to show a combination of graphical, numerical and inferential to test the null hypothesis. 
 
 # Results
 
